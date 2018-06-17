@@ -210,10 +210,54 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="n4J-VD-VrW" kind="presentation" identifier="acceptSegue" id="Aex-wW-NPh"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7g3-78-6GG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1776.8" y="642.72863568215894"/>
+        </scene>
+        <!--Accept Request View Controller-->
+        <scene sceneID="Uga-T7-ahE">
+            <objects>
+                <viewController id="n4J-VD-VrW" customClass="AcceptRequestViewController" customModule="Uber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yqC-R1-nkb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zHV-xx-yj1">
+                                <rect key="frame" x="20" y="40" width="335" height="335"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zHV-xx-yj1" secondAttribute="height" multiplier="1:1" id="IsX-Xo-bET"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5TN-wo-r8K">
+                                <rect key="frame" x="133" y="383" width="109" height="30"/>
+                                <state key="normal" title="Accept Request"/>
+                                <connections>
+                                    <action selector="acceptTapped:" destination="n4J-VD-VrW" eventType="touchUpInside" id="jeR-eA-QrQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5TN-wo-r8K" firstAttribute="centerX" secondItem="yqC-R1-nkb" secondAttribute="centerX" id="5Al-vy-BRp"/>
+                            <constraint firstItem="zHV-xx-yj1" firstAttribute="leading" secondItem="t3Q-3m-m3Z" secondAttribute="leading" constant="20" id="8mv-wO-YKw"/>
+                            <constraint firstItem="t3Q-3m-m3Z" firstAttribute="trailing" secondItem="zHV-xx-yj1" secondAttribute="trailing" constant="20" id="IiJ-1Z-h0O"/>
+                            <constraint firstItem="5TN-wo-r8K" firstAttribute="centerX" secondItem="yqC-R1-nkb" secondAttribute="centerX" id="K1K-te-qmu"/>
+                            <constraint firstItem="zHV-xx-yj1" firstAttribute="top" secondItem="t3Q-3m-m3Z" secondAttribute="top" constant="20" id="Q3C-RK-Eui"/>
+                            <constraint firstItem="5TN-wo-r8K" firstAttribute="top" secondItem="zHV-xx-yj1" secondAttribute="bottom" constant="8" id="m6J-Ro-w5K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t3Q-3m-m3Z"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="zHV-xx-yj1" id="aqh-PQ-Io5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dok-lZ-Ent" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2629.5999999999999" y="645.42728635682158"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="u1Q-LC-PZx">

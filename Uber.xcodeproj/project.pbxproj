@@ -15,6 +15,7 @@
 		2919D16B20D0EE7B0021E83C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2919D16A20D0EE7B0021E83C /* GoogleService-Info.plist */; };
 		295F1FB720D6BB4900C32343 /* RiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295F1FB620D6BB4900C32343 /* RiderViewController.swift */; };
 		295F1FBF20D6FFED00C32343 /* DriverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295F1FBE20D6FFED00C32343 /* DriverTableViewController.swift */; };
+		295F1FC120D70C9100C32343 /* AcceptRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295F1FC020D70C9100C32343 /* AcceptRequestViewController.swift */; };
 		37F25DA92FE29F02E39FB19C /* Pods_Uber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723FC2DA3B9BE32172113492 /* Pods_Uber.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		2919D16A20D0EE7B0021E83C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		295F1FB620D6BB4900C32343 /* RiderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiderViewController.swift; sourceTree = "<group>"; };
 		295F1FBE20D6FFED00C32343 /* DriverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DriverTableViewController.swift; path = /Users/robertjacksonjr/Desktop/Uber/Uber/DriverTableViewController.swift; sourceTree = "<absolute>"; };
+		295F1FC020D70C9100C32343 /* AcceptRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptRequestViewController.swift; sourceTree = "<group>"; };
 		723FC2DA3B9BE32172113492 /* Pods_Uber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31C73D35B038BD0D001FDEE /* Pods-Uber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber.release.xcconfig"; path = "Pods/Target Support Files/Pods-Uber/Pods-Uber.release.xcconfig"; sourceTree = "<group>"; };
 		E3E7FF03025C5B305A9E9EB6 /* Pods-Uber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Uber/Pods-Uber.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				2919D15820D0ED8C0021E83C /* AppDelegate.swift */,
 				2919D15A20D0ED8C0021E83C /* ViewController.swift */,
 				2919D15C20D0ED8C0021E83C /* Main.storyboard */,
+				295F1FC020D70C9100C32343 /* AcceptRequestViewController.swift */,
 				295F1FBE20D6FFED00C32343 /* DriverTableViewController.swift */,
 				295F1FB620D6BB4900C32343 /* RiderViewController.swift */,
 				2919D15F20D0ED900021E83C /* Assets.xcassets */,
@@ -220,6 +223,7 @@
 				295F1FBF20D6FFED00C32343 /* DriverTableViewController.swift in Sources */,
 				295F1FB720D6BB4900C32343 /* RiderViewController.swift in Sources */,
 				2919D15920D0ED8C0021E83C /* AppDelegate.swift in Sources */,
+				295F1FC120D70C9100C32343 /* AcceptRequestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
