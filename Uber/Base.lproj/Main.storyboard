@@ -25,7 +25,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="driver@gmail.com" borderStyle="roundedRect" placeholder="you@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nYY-Ub-Bur">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="rider@gmail.com" borderStyle="roundedRect" placeholder="you@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nYY-Ub-Bur">
                                 <rect key="frame" x="20" y="54" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -204,7 +204,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="aGe-d0-pJ1">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="srt-Hq-qG7">
+                        <barButtonItem key="leftBarButtonItem" title="back" id="srt-Hq-qG7">
                             <connections>
                                 <action selector="logoutTapped:" destination="YZN-wZ-IEf" id="9sX-Vz-5RE"/>
                             </connections>
@@ -226,14 +226,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zHV-xx-yj1">
-                                <rect key="frame" x="20" y="40" width="335" height="335"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zHV-xx-yj1">
+                                <rect key="frame" x="16" y="54" width="335" height="335"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zHV-xx-yj1" secondAttribute="height" multiplier="1:1" id="IsX-Xo-bET"/>
                                 </constraints>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5TN-wo-r8K">
-                                <rect key="frame" x="133" y="383" width="109" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5TN-wo-r8K">
+                                <rect key="frame" x="129" y="397" width="109" height="30"/>
                                 <state key="normal" title="Accept Request"/>
                                 <connections>
                                     <action selector="acceptTapped:" destination="n4J-VD-VrW" eventType="touchUpInside" id="jeR-eA-QrQ"/>
@@ -251,6 +251,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="t3Q-3m-m3Z"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem id="mKj-fM-xvC"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="map" destination="zHV-xx-yj1" id="aqh-PQ-Io5"/>
                     </connections>
